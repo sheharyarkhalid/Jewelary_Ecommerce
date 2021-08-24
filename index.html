@@ -20,13 +20,18 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
+
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      
+
     </head>
 <body>
+ 
     <header>
         <div class="custom_container">
             <div class="header_bar">
                 <div class="logo">
-                <a href="index.html"><img src="image/logo.png"></a>
+                <a href="index.html"><img src="image/menu-logo.png"></a>
                 </div>
                 <button class="nav_btn open_close_nav" type="button">
                       <i class="fas fa-bars"></i>
@@ -34,18 +39,29 @@
                 <div class="nav_bar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about_us.html">Shop</a></li>
-                        <li><a href="services.html">My Cart</a></li>
-                        <li><a href="career.html">About Us</a></li>
-                        <li><a href="contact_us.html">Contact us</a></li>
-                        <li><a href="help.html">Sign Up</a></li>
-                        <li><a href="mybooking.html">Sign IN</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="call_us">
-                    <span><a href="#"><i class="fas fa-phone-volume"></i></a></span>
-                    <small>Call Now:</small>
-                    <a href="#">823</a>
+                    <span class="searchbar_btn">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                            <input class="searchbar" type="text" placeholder="search">
+                        </a>  
+                    </span>
+                    <span class="account_btn_hover">
+                        <a href="#" class="account_icon"><i class="fas fa-user-friends"></i></a>
+                      <div class="account_btn">
+                         <a href="wishlist.html">My Wishlist</a>
+                         <a href="login.html">Sign in</a>
+                         <a href="#">My Account</a>
+                      </div>  
+                    </span>
+                    <span><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></span>
+                    
                 </div>
             </div>
         </div>
@@ -53,21 +69,32 @@
 
 <section class="responsive_nav_bar">
     <div class="cancle_nav"><a class="open_close_nav"><i class="fas fa-times"></i></a></div>
+    <div class="responsive_call_us">
+       
+        <span class="searchbar_btn">
+            <a href="#">
+                <i class="fas fa-search"></i>
+                <input class="searchbar" type="text" placeholder="search">
+            </a>  
+        </span>
+        <span class="account_btn_hover">
+            <a href="#" class="account_icon"><i class="fas fa-user-friends"></i></a>
+          <div class="account_btn">
+             <a href="wishlist.html">My Wishlist</a>
+             <a href="login.html">Sign in</a>
+             <a href="#">My Account</a>
+          </div>  
+        </span>
+        <span class="shoping_cart_icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></span>
+    </div>
     <div class="responsive_nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">Shop</a></li>
-            <li><a href="services.html">My Cart</a></li>
-            <li><a href="career.html">About Us</a></li>
-            <li><a href="contact_us.html">Contact us</a></li>
-            <li><a href="help.html">Sign Up</a></li>
-            <li><a href="mybooking.html">Sign IN</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
         </ul>
-    </div>
-    <div class="responsive_call_us">
-        <span><i class="fas fa-phone-volume"></i></span>
-        <small>Call Now:</small>
-        <a href="#">823</a>
     </div>
 </section>
 
@@ -114,6 +141,7 @@
       </div>
 
 </section>
+
 <section class="features_section" id="features_section">
     <div class="custom_container">
       <div class="features_grid">
@@ -154,7 +182,16 @@
 
   <section class="product_section">
     <div class="custom_container">
-      <h3>Features</h3>
+      <div class="our_product_header">  
+      <h3>Our Products</h3>
+      <ul>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet<br>
+        consectetueradipiscing elit, sed diam nonummy nibh</p>
+      </div>
       <div class="product_grid">
         <div class="product_card">
            <a href="#"> 
@@ -262,77 +299,257 @@
     </div>
   </section> 
 
+<section class="special_product">
+    <div class="custom_container">
+       <div class="special_product_section"> 
+        <div class="special_product_figure">
+          <img src="image/Featured-img.jpg">
+        </div>
+        <div class="special_product_detail">
+            <h2>Featured Product</h2>
+            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+            <h3>High Designer Jewellery</h3>
+            <span class="stock">Availability:<a> In stock</a></span>
+            <small><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></small>
+            <span class="price">101.00$</span>
+            <a class="purchase_special" href="#">Purchase Now</a>
+         </div>
+      </div>   
+    </div>
+</section>
 
 
-  <footer>
+<section class="product_section">
+    <div class="custom_container">
+      <div class="our_product_header">  
+      <h3>Our Categories</h3>
+      <ul>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet<br>
+        consectetueradipiscing elit, sed diam nonummy nibh</p>
+      </div>
+      <div class="product_grid">
+       
+        <div class="product_card our_categories">
+            <a >
+                    <div class="figure">
+                        <img src="image/Products1.png">
+                       </div>
+                       <div class="single_category_detail">
+                        <h5>Necklaces And Rings</h5>                      
+                         <p>View the Collection</p>
+                        </div>    
+             </a>  
+             <div class="our_category_hover">
+                <h4>Necklaces And Rings</h4>
+                <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                <a href="#">View Shop</a>
+            </div>
+         </div>
+  
+         <div class="product_card our_categories">
+            <a >
+                    <div class="figure">
+                        <img src="image/Products1.png">
+                       </div>
+                       <div class="single_category_detail">
+                        <h5>Necklaces And Rings</h5>                      
+                         <p>View the Collection</p>
+                        </div>    
+             </a>  
+             <div class="our_category_hover">
+                <h4>Necklaces And Rings</h4>
+                <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                <a href="#">View Shop</a>
+            </div>
+         </div>
+         <div class="product_card our_categories">
+            <a >
+                    <div class="figure">
+                        <img src="image/Products1.png">
+                       </div>
+                       <div class="single_category_detail">
+                        <h5>Necklaces And Rings</h5>                      
+                         <p>View the Collection</p>
+                        </div>    
+             </a>  
+             <div class="our_category_hover">
+                <h4>Necklaces And Rings</h4>
+                <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                <a href="#">View Shop</a>
+            </div>
+         </div>
+         <div class="product_card our_categories">
+            <a >
+                    <div class="figure">
+                        <img src="image/Products1.png">
+                       </div>
+                       <div class="single_category_detail">
+                        <h5>Necklaces And Rings</h5>                      
+                         <p>View the Collection</p>
+                        </div>    
+             </a>  
+             <div class="our_category_hover">
+                <h4>Necklaces And Rings</h4>
+                <p>Lorem Ipsum is a dummy text that is mainly used by.</p>
+                <a href="#">View Shop</a>
+            </div>
+         </div>
+
+      </div>
+    </div>
+  </section> 
+
+<section class="discount_section">
+  <div class="custom_container">
+    <div class="discount_section_data">
+        <h5>The ultimate in luxury and style.</h5>
+        <small>Flat 15% off on Diamond Jewellery</small>
+        <a href="#">shop now</a>
+    </div>
+  </div>
+</section>
+
+<section class="product_section">
+    <div class="custom_container">
+      <div class="our_product_header">  
+      <h3>Popular items</h3>
+      <ul>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+          <li><span><i class="far fa-gem"></i></span></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet<br>
+        consectetueradipiscing elit, sed diam nonummy nibh</p>
+      </div>
+      <div class="product_grid">
+        <div class="product_card">
+           <a href="#"> 
+           <div class="figure">
+            <img src="image/Products1.png">
+           </div>
+           <div class="product_detail">
+            <h5>High Designer Jewellery</h5>
+             <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+             <p>100.00$</p>
+            </div>
+            </a>  
+        </div>
+  
+        <div class="product_card">
+            <a href="#"> 
+            <div class="figure">
+             <img src="image/Products1.png">
+            </div>
+            <div class="product_detail">
+             <h5>High Designer Jewellery</h5>
+              <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p>100.00$</p>
+             </div>
+             </a>  
+         </div>
+  
+         <div class="product_card">
+            <a href="#"> 
+            <div class="figure">
+             <img src="image/Products1.png">
+            </div>
+            <div class="product_detail">
+             <h5>High Designer Jewellery</h5>
+              <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p>100.00$</p>
+             </div>
+             </a>  
+         </div>
+         <div class="product_card">
+            <a href="#"> 
+            <div class="figure">
+             <img src="image/Products1.png">
+            </div>
+            <div class="product_detail">
+             <h5>High Designer Jewellery</h5>
+              <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p>100.00$</p>
+             </div>
+             </a>  
+         </div>
+        
+      </div>
+    </div>
+  </section> 
+
+
+
+<footer>
     <div class="footer-main-section">
-        <div class="container">
-            <div class="row pad-top80 pad-bottom80">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="footer-section1">
-                        <h4 class="footer-head-line">About us</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has
-                            been the industry.</p>
-                        <ul class="text-box">
-                            <li>
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <span>hello@gmail.com</span>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span>P: 3333 222 1111</span>
-                            </li>
-                            <li>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span> 99 Barnard St States - GA 22222 </span>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="custom_container">
+
+           <div class="footer_data">
+            <div class="footer-section1">
+                <h4 class="footer-head-line">About us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has
+                    been the industry.</p>
+                <ul class="text-box">
+                    <li>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>hello@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>P: 3333 222 1111</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span> 99 Barnard St States - GA 22222 </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-section2">
+                <h4 class="footer-head-line">Information</h4>
+                <ul class="footer-box2 pad-top15">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Advanced Search</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section2">
+                <h4 class="footer-head-line">My Account</h4>
+                <ul class="footer-box2 pad-top15">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Private Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section1">
+                <h4 class="footer-head-line">Newsletter</h4>
+                <p>Sign up for our mailing list to get latest updates and offers.</p>
+                <div class="search-box-1 mar-bottom15 newsletter_mail">
+                    <input type="text" class="search_terms" name="search" placeholder="Email address">
+                    <button class="button-style" type="submit" value=""><i class="fa fa-paper-plane"
+                            aria-hidden="true"></i></button>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
-                    <div class="footer-section2">
-                        <h4 class="footer-head-line">Information</h4>
-                        <ul class="footer-box2 pad-top15">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Customer Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Advanced Search</a></li>
-                            <li><a href="#">Orders and Returns</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
-                    <div class="footer-section2">
-                        <h4 class="footer-head-line">My Account</h4>
-                        <ul class="footer-box2 pad-top15">
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">View Cart</a></li>
-                            <li><a href="#">My Wishlist</a></li>
-                            <li><a href="#">Track My Order</a></li>
-                            <li><a href="#">Private Policy</a></li>
-                            <li><a href="#">Shipping &amp; Returns</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 responsive-top">
-                    <div class="footer-section1">
-                        <h4 class="footer-head-line">Newsletter</h4>
-                        <p>Sign up for our mailing list to get latest updates and offers.</p>
-                        <div class="search-box-1 mar-bottom15">
-                            <input type="text" class="search_terms" name="search" placeholder="Email address">
-                            <button class="button-style" type="submit" value=""><i class="fa fa-paper-plane"
-                                    aria-hidden="true"></i></button>
-                        </div>
-                        <p>We respect your privacy</p>
-                    </div>
+                <p>We respect your privacy</p>
+                <div class="footer_social_icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
+           </div> 
+
         </div>
         <div class="footer-bottom-bar pad-top-bottom25">
-            <p>Copyright © 2021 Responsive <span class="footer-text">Jewellry</span> and All Rights
+            <p>Copyright © 2021 <span class="footer-text"></span> All Rights
                 Reserved. Designed by <span class="footer-text"><a href="#">9TH DIMENSION</a></span>
             </p>
         </div>
@@ -340,7 +557,7 @@
 </footer>
 
 
-<script src="script/taxi_booking.js"></script>
+<script src="script/Ecommerce.js"></script>
 
 
 </body>
